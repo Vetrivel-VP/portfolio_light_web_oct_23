@@ -1,4 +1,4 @@
-# Modern Portfolio | Light Mode
+# Modern Portfolio | Light Mode | CSS Only
 
 ![This is an image](./web.png)
 
