@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background{
+    position: absolute;
+    top: -20%;
+    right: -25%;
+    opacity: .5;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h2{
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+header .menu{
+    display: flex;
+    list-style: none;
+}
+
+header li{
+    margin: 0px 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    color: #222;
+    text-align: center;
+    font-weight: 600;
+}
+
+header li a:before{
+    position: absolute;
+    content: '';
+    background: #222;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    transform: translateX(-110px);
+    transition: transform 0.2s ease-in-out;
+}
+
+header li:hover a::before{
+    transform: translateX(0px);
+}
+
+header .socialMeida{
+    display: flex;
+}
+
+header .socialMeida a{
+    text-decoration: none;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .socialMeida  a i{
+    color: #222;
+    font-size: 18px;
+    transition: all 0.2s ease-in-out;
+}
+
+header .socialMeida a:hover i{
+    transform: scale(1.5);
+}
+
+.bg_text{
+    position: absolute;
+    bottom: -10%;
+    left: 5%;
+    font-size: 16rem;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 35px;
+}
+
+main .imageContainer{
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding-right: 10%;
+}
+
+main .imageContainer .imageBox{
+    width: 425px;
+    height: 550px;
+    background: #69C7E0;
+    border-radius: 100% 100% 0 0;
+    filter: drop-shadow(0px -10px 5px #69C7E0);
+}
+
+main .imageContainer .imageBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+main .imageContainer .imageBox h2{
+    position: absolute;
+    bottom: 30%;
+    left: -70%;
+    transform: rotate(-90deg);
+    font-size: 10rem;
+    letter-spacing: -5px;
+}
+
+main .imageContainer .imageBox h2:before{
+    position: absolute;
+    content: 'natasha';
+    font-size: 10rem;
+    letter-spacing: -5px;
+    top: -5%;
+    color: #69C7E0;
+    z-index: -1;
+
+}
+
+main .textContainer{
+    width: 45%;
+    padding: 40px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .textContainer h1{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #222;
+    margin: 5% 0px;
+}
+
+main .textContainer h2{
+    font-size: 2rem;
+    color: #222;
+}
+
+main .textContainer p{
+    font-size: 16px;
+    margin-bottom: 20px;    
+}
+
+
+main .textContainer a{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #fff;
+    background: #222;
+    position: relative;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    filter: drop-shadow(0px 5px 20px rgba(0,0,0,0.4));
+}
+
+main .textContainer a::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: width 0.2s ease-in-out;
+}
+
+main .textContainer a:hover{
+    color: #222;
+    
+}
+
+main .textContainer a:hover:before{
+    color: #fff;
+    width: 100%;
+}
+
+main .textContainer .learnMore{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+main .textContainer .learnMore div{
+    min-width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    background: #444;
+    margin-right: 3%;
+    overflow: hidden;
+}
+
+main .textContainer .learnMore div:hover img{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+    
+}
+
+main .textContainer .learnMore div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left_menu{
+    position: absolute;
+    bottom: 30%;
+    left: -10%;
+    transform: rotate(-90deg);  
+    cursor: pointer;  
+}
+
+.left_menu a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.middleLayer{
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleLayer p{
+    font-size: 14px;
+    color: #222;
+    font-weight: 600;
+}
+
+.middleLayer .line{
+    width: 180px;
+    height: 2px;
+    background: #69C7E0;
+    margin: 0 20px;
+}
+
+
+
