@@ -1,6 +1,6 @@
 # Modern Portfolio | Light Mode | CSS Only
 
-![This is an image](./web.png)
+![This is an image](./webpage.png)
 
 > Pure CSS - Only Css No any other external plugins
 
